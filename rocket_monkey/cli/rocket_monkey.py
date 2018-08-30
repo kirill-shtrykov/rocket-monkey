@@ -1,10 +1,14 @@
+"""
+CLI for Rocket.Chat
+"""
+
 import os
 import re
 import sys
 import configparser
 import argparse
 from getpass import getpass
-from rocket_monkey import RocketMonkey
+from rocket_monkey.rocket_monkey import RocketMonkey
 
 
 def get_custom(arg):

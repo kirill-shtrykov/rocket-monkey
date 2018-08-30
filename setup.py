@@ -20,7 +20,7 @@ setup(
     name='rocket_monkey',
 
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.2',
+    version='0.0.3',
 
     description='Rocket.Chat API extension and CLI',
     long_description=long_description,

@@ -2,7 +2,7 @@
 
 ################################################################
 # Package: Rocket Monkey - Rocket.Chat API Extension and CLI
-# Version: 0.0.2
+# Version: 0.0.3
 # Author: Kirill Shtrykov <kirill@shtrykov.com>
 # Website: https://shtrykov.com
 ################################################################
@@ -10,17 +10,6 @@
 import os
 import logging.handlers
 from rocketchat_API.rocketchat import RocketChat
-
-logging.basicConfig()
-log = logging.getLogger(__name__)
-
-
-"""Log to syslog if not Win platform"""
-if os.name != 'nt':
-    handler = logging.handlers.SysLogHandler(address='/dev/log')
-    formatter = logging.Formatter('%(module)s.%(funcName)s: %(message)s')
-    handler.setFormatter(formatter)
-    log.addHandler(handler)
 
 
 class RocketMonkey(RocketChat):
