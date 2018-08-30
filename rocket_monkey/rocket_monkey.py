@@ -7,8 +7,6 @@
 # Website: https://shtrykov.com
 ################################################################
 
-import os
-import logging.handlers
 from rocketchat_API.rocketchat import RocketChat
 
 
