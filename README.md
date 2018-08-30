@@ -1,1 +1,1 @@
-# rocket-monkey
+# Rocket.Monkey - Rocket.Chat API extension and CLI
