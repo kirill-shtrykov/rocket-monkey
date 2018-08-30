@@ -2,7 +2,7 @@
 
 ################################################################
 # Package: Rocket Monkey - Rocket.Chat API Extension and CLI
-# Version: 0.0.3
+# Version: 0.0.4
 # Author: Kirill Shtrykov <kirill@shtrykov.com>
 # Website: https://shtrykov.com
 ################################################################
