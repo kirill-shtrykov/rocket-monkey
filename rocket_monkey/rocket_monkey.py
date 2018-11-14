@@ -33,7 +33,7 @@ class RocketMonkey(RocketChat):
         :return: user ID or None
         """
         member_id = None
-        for member in self.users_list().json().get('users'):
+        for member in self.users_list(count=0).json().get('users'):
             if member['username'] == username:
                 member_id = member['_id']
         return member_id
@@ -57,7 +57,7 @@ class RocketMonkey(RocketChat):
         :return: channel ID or None
         """
         room_id = None
-        for room in self.channels_list().json().get('channels'):
+        for room in self.channels_list(count=0).json().get('channels'):
             if room['name'] == channel_name:
                 room_id = room['_id']
         return room_id
@@ -71,7 +71,7 @@ class RocketMonkey(RocketChat):
         :return: group ID or None
         """
         room_id = None
-        for room in self.groups_list().json().get('groups'):
+        for room in self.groups_list(count=0).json().get('groups'):
             if room['name'] == group_name:
                 room_id = room['_id']
         return room_id
